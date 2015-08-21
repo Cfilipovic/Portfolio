@@ -1,0 +1,36 @@
+.name {
+	padding-left: 100px;
+}
+
+.nav {
+	color: #ffffff;
+	background: #2c3e50;
+}
+
+.nav ul {
+	float: right;
+	list-style: none;
+	margin-right: 15px;
+}
+
+.nav ul li {
+	display: inline-block;
+	margin: 25px;
+}
+
+.nav ul li a {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.profile {
+	background: #18bc9c;
+	color: #ffffff;
+}
+
+.profile img {
+	width: 250px;
+	height: 250px;
+	margin-top: 50px;
+}
