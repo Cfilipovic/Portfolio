@@ -36,15 +36,47 @@ body{
   backface-visibility:hidden;
 }
 
+.page-container {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.link {
+  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1em;
+}
+
+.link:hover {
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+  color: #00E5FF;
+}
+
+.link a {
+    color: #ffeddb;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.link a:hover {
+  color: #00E5FF;
+  text-decoration: none;
+}
+
 .big-title {
 	font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
   color: #00E5FF;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
   text-transform: uppercase;
-  margin-top: -50px;
+  margin-top:  10px;
   letter-spacing: .2em;
   font-size: 45px;
   line-height: 1.4;
@@ -54,13 +86,8 @@ body{
 .small-title {
 	font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
 	color: #FFF59D;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
   text-transform: uppercase;
-  margin-top: 10px;
-  letter-spacing: .2em;
+  letter-spacing: .05em;
   font-size: 30px;
   line-height: 1.4;
   font-weight: bold;
@@ -68,4 +95,141 @@ body{
 
 .small-title span {
 		margin-right: 10px;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.contact {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-box {
+  font-family: "Dosis", sans-serif;
+  display: inline-block;
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 2rem;
+  width: 20rem;
+  height: 12rem;
+  border-radius: 2%;
+}
+
+
+.contact-box:hover {
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    color: #FFFFFF;
+}
+
+.contact-box__title {
+  font-size: 2rem;
+}
+
+.contact-box:hover .contact-box__title {
+  -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+  font-size: 2.5rem;
+}
+
+.contact-box__info {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-box__info a {
+  color: #FFFFFF;
+}
+
+.contact-box__info a:hover {
+  text-decoration: none;
+}
+
+.contact-box__icon {
+  font-size: 2.5rem;
+}
+
+.contact-box--teal {
+  color: #FFFFFF;
+  background-color: #75bdbc;
+  border-color: #75bdbc;
+}
+.contact-box--teal .contact-box__title {
+  color: inherit;
+}
+.contact-box--teal:before {
+  background-color: #75bdbc;
+  border: 1px solid #75bdbc;
+}
+.contact-box--teal:hover {
+  color: white;
+}
+.contact-box--teal:hover a {
+  color: white;
+}
+
+.contact-box--orange {
+  color: #FFFFFF;
+  background-color: #f49263;
+  border-color: #f49263;
+}
+.contact-box--orange .contact-box__title {
+  color: inherit;
+}
+.contact-box--orange:before {
+  background-color: #f49263;
+  border: 1px solid #f49263;
+}
+.contact-box--orange:hover {
+  color: white;
+}
+.contact-box--orange:hover a {
+  color: white;
+}
+
+.contact-box--green {
+  color: #FFFFFF;
+  background-color: #8ccc80;
+  border-color: #8ccc80;
+}
+.contact-box--green .contact-box__title {
+  color: white;
+}
+.contact-box--green:before {
+  background-color: #8ccc80;
+  border: 1px solid #8ccc80;
+}
+.contact-box--green:hover {
+  color: white;
+}
+.contact-box--green:hover a {
+  color: white;
+}
+
+.ico-hours {
+  font-size:3em;
+  color: #FFFFFF;
+}
+
+.ico-envelope {
+  font-size:3em;
+  color: #FFFFFF;
+}
+
+.ico-phone {
+  font-size:3em;
+  color: #FFFFFF;
 }
